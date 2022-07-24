@@ -1,0 +1,119 @@
+body{
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+img{
+  max-width: 100%;
+  background-size: cover;
+}
+.App {
+  z-index: 3;
+  font-family: 'Edu TAS Beginner', cursive;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 200ms ease;
+}
+.photo{
+height: 80px;
+width: 100px;
+}
+
+.photo__container{
+  padding: 0 20px;
+position:absolute;
+left: -180px;
+cursor: pointer;
+aspect-ratio: 1;
+width: 210px;
+transform: rotate(30deg);
+border-radius: 5px;
+
+transition: left, 500ms ease;
+background-color: white;
+}
+
+.photo__container:hover > .behind{ 
+width: 300px;
+left: 15px;
+transform: rotate(15deg);
+}
+.photo__container:hover{
+  width: 290px;
+  left: 15px;
+  transform: rotate(-10deg);
+}
+.behind{
+position:absolute;
+left: 0px;
+margin-top:30px ;
+
+display: inline-block;
+cursor: pointer;
+aspect-ratio: 1;
+width: 200px;
+transform: rotate(0deg);
+
+border-radius: 5px;
+border: solid 5px #FFF;
+transition: left, 500ms ease;
+z-index: 2;
+}
+.quoteBox{
+  display: inline-block;
+  overflow: hidden;
+  padding: 20px;
+  background-color: white;
+  width: 400px;
+  height: auto;
+  box-shadow: 0px 0px 5px #000;
+  border-radius: 5px;
+  text-align: right;
+  
+  }
+  
+.quotes__ico{
+  font-size: 36px;
+  margin-right: 5px;
+}
+.quoteText{
+  font-size: 19px;
+  text-align: center;
+}
+.author{
+  font-size: 15px;
+  margin-top: 10px;
+  display: block;
+  text-align: right;
+  font-style: italic;
+}
+
+.Quote__Button{
+  font-size: 30px;
+  width: 40px;
+  aspect-ratio: 1;
+  border:none;
+  box-shadow: 0px 0px 5px #000;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.Quote__Button:hover{
+  box-shadow: 0px 0px 2px #000;
+}
+
+.toAuthor{
+  text-decoration: none;
+  font-size: 13px;
+  transition: font-size 200ms ease;
+}
+
+.toAuthor:hover{
+  font-size: 15px;
+}
+
