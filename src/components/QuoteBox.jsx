@@ -31,6 +31,9 @@ const QuoteBox = ({randomQuote, randomColors, getRandomAll}) => {
             </p>
             <button onClick={getRandomAll} className='Quote__Button' style={objBgStyle}>&#62;</button>
         </div> 
+        <div className='socials'>
+            
+        <a href={`https://api.whatsapp.com/send?text=${randomQuote.quote}`}><i class="fa-brands fa-whatsapp"></i></a></div>
         </div>
     )
 } 
