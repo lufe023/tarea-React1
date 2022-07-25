@@ -123,9 +123,42 @@ z-index: 2;
   color: white;
 }
 
-.whasapp{
- 
+.socials{
+  
+  color: black;
+margin-top: -8px;
+width: 400px;
+background-color:#EEEEEE;
+margin-left:auto;
+margin-right: auto;
+text-align: center;
+overflow: hidden;
+height: 20px;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+transition: height, margin-top, 200ms ease;
+cursor: pointer;
+padding: 10px;
+box-shadow: rgb(0, 0, 0) 0px 0px 5px;
+}
+
+.socials:hover{
+  height: 60px;
+}
+
+.socials a{
+  text-decoration: none;
 }
 .whasapp__ico{
+  
   color: green;
+}
+.socials__icos{
+  margin: 0 5px;
+  display: none;
+}
+
+.socials:hover .socials__icos{
+
+display: inline-block;
 }
