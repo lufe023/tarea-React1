@@ -33,7 +33,7 @@ const QuoteBox = ({randomQuote, randomColors, getRandomAll}) => {
         </div> 
         <div className='socials'>
             
-        <a href={`https://api.whatsapp.com/send?text=${randomQuote.quote}`}><i class="fa-brands fa-whatsapp"></i></a></div>
+        <a className='whasapp' href={`https://api.whatsapp.com/send?text=${randomQuote.quote} by ${author}`}><i className="fa-brands fa-whatsapp whasapp__ico"></i></a></div>
         </div>
     )
 } 
